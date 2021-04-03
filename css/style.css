@@ -184,7 +184,7 @@ header {
 }
 
 .text {
-    width: 400px;
+    width: 50%px;
     margin: 0 auto;
 }
 
@@ -224,7 +224,7 @@ header {
 
     .form-container {
         float: none;
-        width: 100%;
+        width: 96%;
         display: block;
         margin: 0 auto;
         max-width: 400px;
