@@ -1,0 +1,253 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(190, 190, 190);
+    padding: 10px 10% 50px 10%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-1 {
+    float: left;
+    margin-top: 20px;
+    width: 160px;
+    height: 70px;
+    background-image: url("../images/logo1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.logo-2 {
+    float: right;
+    margin-top: 20px;
+    width: 160px;
+    height: 70px;
+    background-image: url("../images/logo2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.clear {
+    clear: both;
+}
+
+/* SECTION FORM */
+
+.cover-form {
+    width: 100%;
+}
+
+.bg {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/bg-form.jpg');
+}
+
+.form-container {
+    float: right;
+    margin-right: 40px;
+    width: 400px;
+    height: 110%;
+    position: relative;
+    top: -5%;
+    background-color: rgba(200, 200, 200, 0.8);
+    box-shadow: 1px 2px 5px 2px rgba(200, 200, 200, 0.7);
+}
+
+.form-container h2 {
+    font-weight: normal;
+    padding: 30px 15px;
+    color: black;
+    font-size: 18px;
+    background-color: rgb(210, 210, 210);
+}
+
+.form-container form {
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.form-container form p {
+    font-size: 16px;
+    color: #525252;
+}
+
+.form-wraper:not(:first-child) {
+    margin-top: 30px;
+}
+
+.form-container form input[type=text], input[type=email], input[type=tel] {
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: rgba(230, 230, 230, 0.9);
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form input[type=submit] {
+    background-color: #033c50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+/* SECTION CHAMADA */ 
+
+.chamada {
+    text-align: center;
+    width: 100%;
+
+}
+
+.chamada .icone-seta {
+    position: absolute;
+    left: 50%;
+    top: 630px;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+    background-image: url('../images/arrow.png');
+}
+
+.chamada .container {
+    padding: 50px 0;
+    background-color: rgb(220, 220, 220);
+}
+.chamada h2 {
+    display: inline-block;
+}
+
+.chamada p {
+    display: inline-block;
+    max-width: 600px;
+}
+
+/* SECTION MOSAICO */
+
+.flex-mosaico {
+    display: flex;
+}
+
+.item-1 {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    padding-top: 20%;
+}
+
+.item-2 {
+    padding: 60px;
+    width: 40%;
+    background-color: #ccc;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.container-2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+}
+
+.text {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.img {  
+    margin: 0 auto;
+}
+
+.img img {
+    width: 100px;
+    padding-top: 20px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 968px) {
+
+    .bg {
+        text-align: center;
+        height: 550px;
+    }
+
+    .chamada .icone-seta {
+        top: 680px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .logo-1, .logo-2 {
+        float: none;
+        margin: 10px auto;
+    }
+
+    .bg {
+        text-align: center;
+    }
+
+    .form-container {
+        float: none;
+        width: 96%;
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    .flex-mosaico {
+        display: block;
+    }
+
+    .item-1 {
+        width: 100%;
+        padding-top: 50%;
+    }
+
+    .item-2 {
+        width: 100%;
+        padding: 20%;
+
+    }
+
+    .chamada .icone-seta {
+        display: block;
+        top: 760px;
+    }
+}
+
